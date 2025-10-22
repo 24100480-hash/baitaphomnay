@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Công Viên</title>
+  <style>
+    nav {
+      display: inline-block;
+      width: 80%;
+      text-align: center;
+    }
+
+    /* Nhận xét kiểu dáng hiện có cho phần tử li */
+    /* li { color: blue; font-size: 16px; } */
+
+    nav img {
+      width: 10%;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 40% 40%;
+      justify-content: space-between;
+      align-items: center;
+      row-gap: 20px;
+    }
+
+    .grid img {
+      width: 100%;
+    }
+
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    main {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content">Chuyển đến Nội dung chính</a>
+  <nav>
+    <ul>
+      <li><a href="#"><img src="https://via.placeholder.com/50" alt="Nav Icon 1"> Trang chủ</a></li>
+      <li><a href="#"><img src="https://via.placeholder.com/50" alt="Nav Icon 2"> Công viên</a></li>
+      <li><a href="#"><img src="https://via.placeholder.com/50" alt="Nav Icon 3"> Liên hệ</a></li>
+    </ul>
+  </nav>
+  <main id="main-content">
+    <h1>Chào mừng đến với Trang Công Viên</h1>
+    <section class="grid">
+      <div>
+        <h2>Công viên 1</h2>
+        <img src="https://via.placeholder.com/300" alt="Công viên 1">
+        <p>Mô tả về công viên 1.</p>
+      </div>
+      <div>
+        <h2>Công viên 2</h2>
+        <img src="https://via.placeholder.com/300" alt="Công viên 2">
+        <p>Mô tả về công viên 2.</p>
+      </div>
+    </section>
+    <section class="flex">
+      <div>
+        <h2>Hình ảnh bổ sung</h2>
+        <img src="https://via.placeholder.com/200" alt="Hình ảnh bổ sung 1">
+      </div>
+      <div>
+        <h2>Hình ảnh bổ sung</h2>
+        <img src="https://via.placeholder.com/200" alt="Hình ảnh bổ sung 2">
+      </div>
+    </section>
+  </main>
+</body>
+</html>
